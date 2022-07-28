@@ -1,0 +1,262 @@
+/* ============================== RESET ============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================== VARIÁVEIS ============================== */
+:root {
+    /* FONT SIZES */
+    font-size: 62.5%;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --text-color: #FFFFFF;
+
+    --hue: 194;
+    --primary-color: #065E7C;
+    --tableth-color: hsla(194, 72%, 13%, 1);
+    --tabletr-color: hsla(192, 65%, 7%, 1);
+    --tabletr-color2: hsla(195, 61%, 6%, 0.5);
+    --scrollbar-color: #4A808C;
+    --background-color: #000000;
+}
+
+*::-webkit-scrollbar {
+    width: 22px;
+    height: 22px;
+    border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: transparent;
+    border-radius: 8rem;
+    box-shadow: inset 0 0 0px 6px var(--scrollbar-color);
+    border: solid 8px transparent;
+}
+
+/* ============================== BODY ============================== */
+body {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    height: 100vh;
+    padding: 11.5rem 0;
+    width: 112rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 194px;
+    height: 32.75px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 46.2rem;
+    border-radius: .5rem;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    background-color: #06181C;
+    color: #7C7C8A;
+    border: none;
+}
+
+.search button {
+    width: 17rem;
+    height: 4.8rem;
+    background-color: var(--primary-color);
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.4rem;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img {
+    width: 24px;
+    height: 24px;
+}
+
+.search button:hover {
+    color: #065E7C;
+    background: #FFFFFF;
+}
+
+.search button:hover .star {
+    filter: invert(25%) sepia(20%) saturate(4875%) hue-rotate(166deg) brightness(50%) contrast(95%);
+}
+
+.hide {
+    display: none;
+  }
+
+.table {
+    border: 1px solid #4A808C;
+    border-radius: 1rem;
+  
+    overflow: overlay;
+  
+    margin-top: 8.7rem;
+} 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table * {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: var(--text-color);
+}
+
+table th {
+    background: var(--tableth-color);
+    text-align: left;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    padding: 1.6rem 4rem;
+    font-weight: bold;
+    height: 6.4rem;
+
+    position: sticky;
+    top: 0px;
+}
+
+table th:first-child {
+    border-top-left-radius: 1rem;
+    width: 50.4rem;
+}
+
+table th:nth-child(2) {
+    width: 21.8rem;
+}
+
+table th:last-child {
+    border-top-right-radius: 1rem;
+    width: 17.8rem;
+}
+
+table tr {
+    background: var(--tabletr-color);
+    border-bottom:  1px solid #4A808C;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table tr:nth-child(odd) {
+    background: var(--tabletr-color2);
+}
+
+table td {
+    padding: 2rem 4rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td.user img {
+    width: 5.6rem;
+    height: 5.6rem;
+    
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td.user span {
+    font-weight: normal;
+}
+
+td.user span:hover {
+    color: #a5a5a5;
+}
+
+td .remove {
+    background: none;
+    border: none;
+    font-weight: bold;
+    
+    color: red;
+
+    cursor: pointer;
+}
+
+td .remove:hover {
+    color: rgb(160, 0, 0);
+}
+
+.noFav {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem;
+    gap: 6rem;
+    background: var(--tabletr-color2);
+    font-size: 4rem;
+    color: hsla(189, 4%, 32%, 1);
+}
