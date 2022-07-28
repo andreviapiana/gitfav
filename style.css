@@ -143,6 +143,7 @@ header h1 {
     border: 1px solid #4A808C;
     border-radius: 1rem;
   
+    overflow: auto;
     overflow: overlay;
   
     margin-top: 8.7rem;
