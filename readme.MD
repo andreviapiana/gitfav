@@ -6,7 +6,7 @@ Nele devemos criar uma página de favoritos do GitHub. Ela vai receber os dados 
 
 A página em formato desktop é vista na imagem abaixo:
 
-![Untitled9](https://user-images.githubusercontent.com/106932234/181098259-cf80cab9-d07c-4a52-bdbf-fe20e95bbb84.png)
+![Untitled10](https://user-images.githubusercontent.com/106932234/181628956-269db052-b77b-42bb-94ca-4691e5e3302b.png)
 
 O objetivo final foi atingido.
 
