@@ -255,7 +255,7 @@ td .remove:hover {
     margin: auto;
     justify-content: center;
     align-items: center;
-    padding: 20rem;
+    padding: 18rem;
     gap: 6rem;
     background: var(--tabletr-color2);
     font-size: 4rem;
